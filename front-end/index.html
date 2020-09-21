@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Golf Shop</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <div class="navbar"></div>
+
+    <!-- Featured Item Carosell -->
+    <div class="center">
+        <h1>Featured Items:</h1>
+
+            <div class="slideshow">
+                <a href="product_detail.html" class="slides">
+                    <!-- this is where information from the database will be written -->
+                </a>
+            </div>
+            
+            <div class="slide_buttons">
+                <button class="displayLeft" onclick="plusDivs (-1)">&#10094;</button>
+                <button class="displayRight" onclick="plusDivs (+1)">&#10095;</button>
+            </div>
+    </div>
+
+    <script src="scripts/slides.js"></script>
+    <script src="scripts/nav.js"></script>
+
+</body>
+
+</html>

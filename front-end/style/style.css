@@ -1,0 +1,210 @@
+*{
+    background-color: rgb(128, 185, 185);
+}
+
+.center {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+/* nav */
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+nav ul li {
+    width: 150px;
+    border: solid black 2px;
+    background-color: rgb(14, 78, 14);
+    border-radius: 15%;
+    text-align: center;
+    margin: 0px 10px 0px 10px;
+}
+
+/* searchboxes */
+
+.searchBox input {
+    background-color: gainsboro;
+}
+
+/* product details */
+
+.product_detail {
+    margin: 10px 20px 20px 20px;
+}
+
+.price {
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.purchaseForm {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.purchaseForm div {
+    margin-top: 10px;
+}
+
+.purchaseForm label {
+    margin-top: 10px;
+}
+
+.purchaseForm select {
+    background-color: white;
+    width: fit-content;
+    margin-top: 10px;
+}
+
+.purchaseSubmit {
+    background-color: white;
+    width: fit-content;
+    margin-top: 10px;
+}
+
+/* slideshow */
+
+.slideshow img {
+    height: 500px;
+}
+
+.slide_buttons button {
+    color: white;
+    background-color: black;
+}
+
+.slide_buttons {
+    padding-top: 5px;
+}
+
+/* contact page */
+
+.contactWrapper {
+    text-align: center;
+}
+
+.contactPage {
+    display: inline-block;
+    text-align: left;
+}
+
+.contactPage h1 {
+    text-align: center;
+}
+
+.inputContainer {
+    position: relative;
+    height: 30px;
+}
+
+.contactInput {
+    position: absolute;
+    right: 50px;
+    width: 200px;
+}
+
+.contactPage input {
+    background-color: gainsboro;
+    margin: 2px 2px 10px 2px;
+}
+
+.submitButton {
+    display: block;
+}
+
+textarea {
+    resize: none;
+    background-color: gainsboro;
+}
+
+/* products page */
+
+.product {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.category {
+    display: none;
+}
+
+.filter {
+    overflow: hidden;
+}
+
+.fcategory {
+    margin: 0px 5px 5px 5px;
+}
+
+.individualProduct {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 0 10px;
+}
+
+.pImg {
+    height: 300px;
+    border: black solid 2px;
+    margin-top: 5px;
+}
+
+.pName {
+    margin-top: -5px;
+    margin-left: 2px;
+}
+.pPrice {
+    margin-top: -10px;
+    margin-left: 2px;
+}
+
+.filter fieldset {
+    border: none;
+}
+
+/* dynamic layout */
+
+@media only screen and (max-width: 800px) {
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav ul li {
+        margin-top: 5px;
+    }
+
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <div class="navbar"></div>
+    
+    <div class="center">
+        <h1>Product Details:</h1>    
+        <img src="img/m4d.jpg" alt="Photo not available" class="pImg">
+    </div> 
+    <div class="product_detail">
+        <p>This is where my product detail information will go! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat ex vel hendrerit mattis. Integer varius urna vitae consequat venenatis. Etiam id magna quis enim porttitor finibus ac nec urna. Suspendisse potenti. Aliquam tempus blandit nibh, at tempus elit lobortis non. Morbi imperdiet facilisis odio id accumsan. In hac habitasse platea dictumst. Vivamus viverra felis ut metus pharetra varius. Sed dignissim felis magna, ac ullamcorper nisl suscipit vitae. Cras sagittis a neque at convallis. Nam cursus porta nulla vitae lacinia. Donec fringilla viverra justo, sed hendrerit velit sollicitudin id. Praesent sit amet ante molestie, feugiat lectus at, pretium nunc. Donec.</p>
+        
+        <p class="price">Price: $200</p>
+        
+        <form class="purchaseForm" onsubmit="purchase()">
+            <label for="dexterity">Right or Left handed?</label>
+            <div>
+                <input type="radio" name="dexterity" value="RH">RH
+                <input type="radio" name="dexterity" value="LH">LH
+            </div>
+            <label for="howMany">How many would you like to purchase?</label>
+            <select name="howMany">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <input class="purchaseSubmit" type="submit">
+        </form>
+
+    </div> 
+    
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/responses.js"></script>
+
+</body>
+</html>

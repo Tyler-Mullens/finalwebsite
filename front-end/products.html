@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    
+    <div class="navbar"></div>
+    
+    <div class="center">
+        <h1>Products:</h1>
+
+        <form class="filter" action="filter">
+            <fieldset>
+                <label for="filter">Filter:</label>
+                <input class="fcategory" name="prodFilter" value="all"    type="radio">  All
+                <input class="fcategory" name="prodFilter" value="driver" type="radio">  Driver
+                <input class="fcategory" name="prodFilter" value="putter" type="radio">  Putter
+                <input class="fcategory" name="prodFilter" value="balls" type="radio">  Balls
+            </fieldset>
+        </form>
+
+        <div class="product"></div>
+        
+    <script src="scripts/nav.js"></script>
+    <script src="scripts/products.js"></script>
+    
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/normalize.css">
+</head>
+<body>
+
+    <div class="navbar"></div>
+
+    <div class="contactWrapper">
+        <form class="contactPage" onsubmit="thankYou()">
+            <h1>Contact Information:</h1>
+            
+            <div class="inputContainer">
+                <label for="fname">First Name:</label>
+                    <input class="contactInput" type="text" id="fName" name="fName" required>         
+            </div>
+
+            <div class="inputContainer">
+                <label for="lname">Last Name:</label>
+                    <input class="contactInput" type="text" id="lName" name="lName" required>           
+            </div>
+
+            <div class="inputContainer">
+                <label for="email">Email Adress:</label>
+                    <input class="contactInput" type="email" id="email" name="email" required placeholder="someone@somewhere.com" size="25">          
+            </div>
+
+            <div class="inputContainer">
+                <label for="phoneNumber">Phone Number:</label>
+                    <input class="contactInput" type="tel" id="phoneNumber" name="phoneNumber" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="555-555-5555">    
+            </div>
+
+            <p>Preferred contact method:</p>
+            <label for="contactMethod">Phone or Email:</label>
+            <input type="radio" id="contactMethodP" name="contactMethod" value="phone">Phone
+            <input type="radio" id="contactMethodE" name="contactMethod" value="email">Email
+            
+            <p>How did you hear about us:</p>
+            <input type="checkbox" id="refC" name="refC" value="conference">Conference
+            <input type="checkbox" id="refTV" name="refTV" value="tv">TV
+            <input type="checkbox" id="refR" name="refR" value="radio">Radio
+            <input type="checkbox" id="refWoM" name="refWoM" value="wordOfMouth">Word of Mouth
+            <input type="checkbox" id="refO" name="refO" value="other">Other
+            
+            <p>Comments:</p>
+            <textarea name="comments" id="comments" cols="50" rows="10"></textarea>
+            <input class="submitButton" type="submit">
+        </form>
+    </div>
+    <script src="scripts/responses.js"></script>
+    <script src="scripts/nav.js"></script>
+
+</body>
+
+</html>
